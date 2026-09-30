@@ -1,0 +1,27 @@
+{
+  "id": "pack-editor",
+  "name": "Resource pack editor",
+  "version": "1.0.0",
+  "description": "Turn off parts of any resource pack, such as its leaves, sounds or interface, so the packs below it or the vanilla look show through instead.",
+  "api": 1,
+  "launcher": ">=1.0.0",
+  "permissions": [
+    "instances:read",
+    "resourcepacks:read",
+    "resourcepacks:write"
+  ],
+  "contributes": {
+    "instanceTabs": [
+      {
+        "id": "packs",
+        "title": "%tab%",
+        "icon": "icons/layers.svg",
+        "entry": "ui/editor.html"
+      }
+    ],
+    "locales": {
+      "en": "locales/en.json",
+      "pl": "locales/pl.json"
+    }
+  }
+}

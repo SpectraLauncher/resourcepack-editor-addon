@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+  <aside class="packs">
+    <h2 data-t="packs"></h2>
+    <ul id="pack-list"></ul>
+  </aside>
+
+  <main>
+    <p id="message" class="message"></p>
+
+    <section id="editor" hidden>
+      <header class="head">
+        <img id="pack-icon" class="pack-icon" alt="">
+        <div class="head-text">
+          <h1 id="pack-name"></h1>
+          <p id="pack-note" class="muted"></p>
+        </div>
+      </header>
+
+      <div class="tools">
+        <input id="search" type="search" autocomplete="off">
+        <label class="check"><input id="only-off" type="checkbox"> <span data-t="onlyOff"></span></label>
+      </div>
+
+      <div id="tree" class="tree"></div>
+
+      <footer class="bar">
+        <span id="summary" class="muted"></span>
+        <button id="reset" type="button" data-t="reset"></button>
+        <button id="save" type="button" class="primary" data-t="save"></button>
+      </footer>
+    </section>
+  </main>
+
+  <script type="module" src="editor.js"></script>
+</body>
+</html>
